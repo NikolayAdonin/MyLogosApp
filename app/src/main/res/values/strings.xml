@@ -1,0 +1,41 @@
+<resources>
+    <string name="app_name">LogosApp</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">В разработке</string>
+
+    <string-array name="NavPlan">
+        <item>2199</item>
+        <item>557</item>
+        <item>567</item>
+    </string-array>
+
+    <string-array name="Points2199">
+        <item>Белгород, Автовокзал 06:00</item>
+        <item>Старый Оскол, Автовокзал 08:00</item>
+        <item>Воронеж, Автовокзал Центральный10:00</item>
+    </string-array>
+
+    <string-array name="Points557">
+        <item>Белгород, Автовокзал 07:30</item>
+        <item>Короча, Автостанция 08:20</item>
+        <item>Губкин, Автостанция Междугородная 09:20</item>
+        <item>Старый Оскол, Автовокзал 09:50</item>
+        <item>Горшечное, Горшечное 10:15</item>
+        <item>Воронеж, Автовокзал Центральный 11:30</item>
+    </string-array>
+
+    <string-array name="Points567">
+        <item>Белгород, Автовокзал 09:55</item>
+        <item>Алексеевка, Белгородская область, Алексеевка 10:42</item>
+        <item>Короча, Автостанция 10:50</item>
+        <item>Плотавец, ост. Плотавец 11:06</item>
+        <item>Скородное, ост. Скородное 11:27</item>
+        <item>Бобровы Дворы, с. Бобровы Дворы 11:48</item>
+        <item>Губкин, Автостанция Междугородная 12:15</item>
+        <item>Старый Оскол, Автовокзал 13:20</item>
+        <item>Горшечное, Горшечное 13:55</item>
+        <item>Ясенки, Курская область, Ясенки 14:27</item>
+        <item>Воронеж, Автовокзал Центральный 15:50</item>
+    </string-array>
+
+</resources>
