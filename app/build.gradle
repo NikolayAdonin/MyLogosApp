@@ -6,12 +6,17 @@ android {
     compileSdkVersion 30
     buildToolsVersion "30.0.2"
 
+    packagingOptions {
+        exclude 'META-INF/INDEX.LIST'
+    }
+
     defaultConfig {
         applicationId "com.example.logosapp"
         minSdkVersion 16
         targetSdkVersion 30
         versionCode 1
         versionName "1.0"
+        multiDexEnabled = true
 
         testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
     }
@@ -30,6 +35,21 @@ dependencies {
     implementation 'androidx.core:core-ktx:1.5.0'
     implementation 'androidx.appcompat:appcompat:1.3.0'
     implementation 'androidx.constraintlayout:constraintlayout:2.0.4'
+    implementation 'com.android.support.constraint:constraint-layout:1.0.2'
+
+    //pusher chat
+    implementation 'com.pusher:pusher-java-client:1.8.0'
+    implementation 'com.squareup.retrofit2:retrofit:2.4.0'
+    implementation 'com.squareup.retrofit2:converter-moshi:2.4.0'
+
+    //mySQL
+    implementation("mysql:mysql-connector-java:8.0.15")
+
+    //openstreetmap
+    implementation 'org.osmdroid:osmdroid-android:6.1.10'
+    implementation 'org.osmdroid:osmdroid-wms:6.1.10'
+    implementation 'org.osmdroid:osmdroid-mapsforge:6.1.10'
+    implementation 'org.osmdroid:osmdroid-geopackage:6.1.10'
 
     implementation 'com.google.android.material:material:1.2.1'
     implementation 'androidx.legacy:legacy-support-v4:1.0.0'

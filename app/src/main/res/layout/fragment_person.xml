@@ -11,6 +11,42 @@
         android:layout_width="match_parent"
         android:layout_height="match_parent">
 
+        <TextView
+            android:id="@+id/textView2"
+            android:layout_width="318dp"
+            android:layout_height="517dp"
+            android:layout_alignStart="@+id/imageButton10"
+            android:layout_alignLeft="@+id/imageButton10"
+            android:layout_alignTop="@+id/imageButton"
+            android:layout_alignEnd="@+id/imageButton20"
+            android:layout_alignRight="@+id/imageButton20"
+            android:layout_alignBottom="@+id/button4"
+            android:layout_marginStart="-10dp"
+            android:layout_marginLeft="-10dp"
+            android:layout_marginTop="-10dp"
+            android:layout_marginEnd="-10dp"
+            android:layout_marginRight="-10dp"
+            android:layout_marginBottom="-10dp"
+            android:background="@drawable/custom_button" />
+
+        <TextView
+            android:id="@+id/textView3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignStart="@+id/textView2"
+            android:layout_alignLeft="@+id/textView2"
+            android:layout_alignTop="@+id/textView2"
+            android:layout_alignEnd="@+id/textView2"
+            android:layout_alignRight="@+id/textView2"
+            android:layout_alignBottom="@+id/imageButton"
+            android:layout_marginStart="0dp"
+            android:layout_marginLeft="0dp"
+            android:layout_marginTop="0dp"
+            android:layout_marginEnd="0dp"
+            android:layout_marginRight="241dp"
+            android:layout_marginBottom="-10dp"
+            android:background="@drawable/custom_button" />
+
         <ImageButton
             android:id="@+id/imageButton"
             android:layout_width="50dp"
@@ -290,7 +326,8 @@
             android:layout_marginStart="65dp"
             android:layout_marginLeft="65dp"
             android:layout_marginTop="45dp"
-            android:textSize="30sp"
-            android:text="0" />
+            android:text="0"
+            android:textSize="30sp" />
+
     </RelativeLayout>
 </FrameLayout>

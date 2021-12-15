@@ -9,50 +9,39 @@
 
     <EditText
         android:id="@+id/editTextEmailAddress"
-        android:layout_width="315dp"
-        android:layout_height="55dp"
-        android:layout_marginTop="96dp"
-        android:layout_marginEnd="48dp"
-        android:layout_marginRight="48dp"
+        android:layout_width="340dp"
+        android:layout_height="52dp"
+        android:layout_marginTop="180dp"
         android:ems="10"
+        android:hint="Логин"
         android:inputType="textEmailAddress"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
     <EditText
         android:id="@+id/editTextPassword"
-        android:layout_width="314dp"
-        android:layout_height="54dp"
-        android:layout_marginTop="216dp"
-        android:layout_marginEnd="48dp"
-        android:layout_marginRight="48dp"
+        android:layout_width="340dp"
+        android:layout_height="52dp"
+        android:layout_marginTop="240dp"
         android:ems="10"
+        android:hint="Пароль"
         android:inputType="textPassword"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
     <Button
         android:id="@+id/buttonEnter"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="160dp"
-        android:layout_marginLeft="160dp"
+        android:layout_width="336dp"
+        android:layout_height="46dp"
         android:layout_marginTop="340dp"
+        android:background="@drawable/custom_button"
+        android:fontFamily="@font/comfortaa_regular"
         android:onClick="LoginPress"
         android:text="Войти"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
-
-    <TextView
-        android:id="@+id/textView4"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="48dp"
-        android:layout_marginLeft="48dp"
-        android:layout_marginTop="184dp"
-        android:textSize="20sp"
-        android:typeface="monospace"
-        android:text="Пароль"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.533"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
@@ -62,10 +51,13 @@
         android:layout_height="wrap_content"
         android:layout_marginStart="48dp"
         android:layout_marginLeft="48dp"
-        android:layout_marginTop="60dp"
-        android:textSize="20sp"
+        android:layout_marginTop="128dp"
+        android:layout_marginBottom="25dp"
+        android:fontFamily="@font/comfortaa_regular"
+        android:text="ВХОД"
+        android:textSize="30sp"
         android:typeface="monospace"
-        android:text="Логин"
+        app:layout_constraintBottom_toTopOf="@+id/editTextEmailAddress"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 </androidx.constraintlayout.widget.ConstraintLayout>

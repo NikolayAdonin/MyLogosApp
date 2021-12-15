@@ -7,6 +7,10 @@ import android.view.View
 import android.widget.EditText
 import android.widget.Toast
 import androidx.appcompat.app.AppCompatActivity
+import java.sql.Connection
+import java.sql.DriverManager
+import java.sql.SQLException
+import java.util.*
 
 class LoginActivity : AppCompatActivity() {
     lateinit var etEmail: EditText
@@ -16,10 +20,29 @@ class LoginActivity : AppCompatActivity() {
     val MIN_PASSWORD_LENGTH = 6
     val testMail = "test@gmail.com"
     val testPass = "test123"
+    internal lateinit var conn: Connection
+    private var username = "root"
+    private var password = "root"
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_login)
+        App.user = testMail
+
+        val connectionProps = Properties()
+        connectionProps.put("user", username)
+        connectionProps.put("password", password)
+        try {
+            Class.forName("com.mysql.cj.jdbc.Driver").newInstance()
+            conn = DriverManager.getConnection("jdbc:mysql://127.0.0.1:3306/logos", connectionProps)
+        } catch (ex: SQLException) {
+            // handle any errors
+            ex.printStackTrace()
+        } catch (ex: Exception) {
+            // handle any errors
+            ex.printStackTrace()
+        }
+
         viewInitializations()
     }
 
@@ -68,11 +91,11 @@ class LoginActivity : AppCompatActivity() {
             val password = etPassword!!.text.toString()
             userEmail = email
             userPassword = password
-            Toast.makeText(this, "Вы авторизованы", Toast.LENGTH_SHORT).show()
             if(userEmail=="test@gmail.com" && userPassword == "test123")
             {
+                //Toast.makeText(this, "Вы авторизованы", Toast.LENGTH_SHORT).show()
                 this.finish()
-                val fragmetsIntent = Intent(this,FragmetsActivity::class.java)
+                val fragmetsIntent = Intent(this,FragmentsActivity::class.java)
                 startActivity(fragmetsIntent)
             }
             // Here you can call you API

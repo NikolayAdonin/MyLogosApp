@@ -22,7 +22,7 @@ class KabFragment : Fragment() {
 
         val imageView: ImageView = paychartview.findViewById(R.id.imageView)
 
-        imageView.setImageDrawable(ContextCompat.getDrawable(requireActivity(),R.drawable.ic_baseline_photo_24))
+        imageView.setImageDrawable(ContextCompat.getDrawable(requireActivity(),R.drawable.profile_photo))
 
         val navPlan = resources.getStringArray(R.array.NavPlan)
 
